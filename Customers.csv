@@ -1,0 +1,78 @@
+﻿customer_id,name,email,age,gender,location
+1,John Doe,johndoe@example.com,30,M,New York
+2,Jane Doe,janedoe@example.com,25,F,Los Angeles
+3,Alice,alice@example.com,35,F,Chicago
+4,Bob,bob@example.com,40,M,San Francisco
+5,Emily,emily@example.com,28,F,Boston
+6,Michael Smith,michael@example.com,45,M,Houston
+7,Sarah Brown,sarah@example.com,32,F,Miami
+8,David Johnson,david@example.com,38,M,Seattle
+9,Jessica Lee,jessica@example.com,27,F,Atlanta
+10,Christopher Davis,chris@example.com,33,M,Denver
+11,Olivia Garcia,olivia@example.com,29,F,Phoenix
+12,William Martinez,william@example.com,41,M,Dallas
+13,Sophia Nguyen,sophia@example.com,36,F,Philadelphia
+14,James Taylor,james@example.com,31,M,Detroit
+15,Elizabeth Rodriguez,elizabeth@example.com,26,F,Chicago
+16,Ethan Thompson,ethan@example.com,39,M,San Diego
+17,Mia Hernandez,mia@example.com,34,F,Washington D.C.
+18,Alexander Lewis,alexander@example.com,42,M,Austin
+19,Chloe Walker,chloe@example.com,30,F,Nashville
+20,Benjamin Hall,benjamin@example.com,37,M,Portland
+21,Olivia Brown,olivia.b@example.com,31,F,Charlotte
+22,Liam Wilson,liam@example.com,29,M,Las Vegas
+23,Ava Martin,ava@example.com,28,F,Orlando
+24,Mason Garcia,mason@example.com,34,M,Sacramento
+25,Amelia Martinez,amelia@example.com,33,F,Salt Lake City
+26,Jacob Nguyen,jacob@example.com,39,M,Minneapolis
+27,Emma Hernandez,emma@example.com,36,F,Baltimore
+28,Michael Perez,michael.p@example.com,40,M,Tampa
+29,Charlotte Robinson,charlotte@example.com,32,F,St. Louis
+30,Daniel Lee,daniel@example.com,38,M,Pittsburgh
+31,Mia Rodriguez,mia.r@example.com,27,F,Cincinnati
+32,Alexander Taylor,alexander.t@example.com,42,M,Kansas City
+33,Ava White,ava.w@example.com,35,F,Indianapolis
+34,Noah Harris,noah@example.com,30,M,Raleigh
+35,Sophia King,sophia.k@example.com,44,F,Columbus
+36,William Scott,william.s@example.com,46,M,San Antonio
+37,Isabella Green,isabella@example.com,29,F,Milwaukee
+38,Ethan Allen,ethan.a@example.com,31,M,Memphis
+39,Mia Torres,mia.t@example.com,37,F,Oklahoma City
+40,Amelia Nguyen,amelia.n@example.com,28,F,Louisville
+41,Elijah Young,elijah@example.com,33,M,Buffalo
+42,Harper Clark,harper@example.com,26,F,Hartford
+43,James Baker,james.b@example.com,40,M,Richmond
+44,Evelyn Perez,evelyn@example.com,35,F,Providence
+45,William Flores,william.f@example.com,41,M,Bridgeport
+46,Mia Turner,mia.tu@example.com,32,F,Des Moines
+47,Ethan Morris,ethan.m@example.com,36,M,Jackson
+48,Sofia Ward,sofia@example.com,31,F,Worcester
+49,Lucas Carter,lucas@example.com,30,M,Boise
+50,Amelia Phillips,amelia.p@example.com,29,F,Manchester
+51,Benjamin Mitchell,benjamin.m@example.com,38,M,Columbia
+52,Emma Thompson,emma.t@example.com,34,F,Virginia Beach
+53,Elijah Scott,elijah.s@example.com,37,M,Springfield
+54,Evelyn Parker,evelyn.p@example.com,42,F,Fargo
+55,Jackson Edwards,jackson@example.com,28,M,Baton Rouge
+56,Harper Gonzalez,harper.g@example.com,27,F,Billings
+57,Mia Hernandez,mia.h@example.com,34,F,Anchorage
+58,Lucas Thompson,lucas.t@example.com,29,M,Anchorage
+59,Ava Martinez,ava.m@example.com,35,F,Billings
+60,James Wilson,james.w@example.com,40,M,Baton Rouge
+61,Emma Harris,emma.h@example.com,31,F,Fargo
+62,Michael Garcia,michael.g@example.com,26,M,Springfield
+63,Amelia Rodriguez,amelia.r@example.com,33,F,Virginia Beach
+64,William Davis,william.d@example.com,37,M,Columbia
+65,Sofia Taylor,sofia.t@example.com,42,F,Manchester
+66,Ethan Anderson,ethan.and@example.com,28,M,Boise
+67,Olivia Brown,olivia.b@example.com,27,F,Des Moines
+68,Liam Garcia,liam.g@example.com,34,M,Jackson
+69,Ava Harris,ava.h@example.com,39,F,Worcester
+70,Noah Clark,noah.c@example.com,31,M,Baltimore
+71,Sophia Martinez,sophia.m@example.com,36,F,Bridgeport
+72,James Johnson,james.j@example.com,41,M,Providence
+73,Emily Smith,emily.s@example.com,32,F,Richmond
+74,Olivia Williams,olivia.w@example.com,37,F,Des Moines
+75,Lucas White,lucas.w@example.com,42,M,Jackson
+76,Amelia Brown,amelia.b@example.com,28,F,Worcester
+77,William Martin,william.m@example.com,29,M,Bridgeport
