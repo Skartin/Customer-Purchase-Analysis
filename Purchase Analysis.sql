@@ -7,7 +7,7 @@ SELECT
  gender,
  COUNT(*) AS total_customers
 FROM 
- Customer-Purchase-Analysis..customers
+ Customer-Purchase-Analysiscustomers
 GROUP BY 
  gender;
 
@@ -30,7 +30,7 @@ SELECT
 FROM 
  Customer-Purchase-Analysis..orders o
 JOIN 
- products p ON o.product_id = p.product_id;
+ Customer-Purchase-Analysis..products p ON o.product_id = p.product_id;
 
 -- Average order value
 SELECT 
@@ -38,7 +38,7 @@ SELECT
 FROM 
  Customer-Purchase-Analysis..orders o
 JOIN 
- products p ON o.product_id = p.product_id;
+ Customer-Purchase-Analysis..products p ON o.product_id = p.product_id;
 
 -- Most popular products based on sales volume
 SELECT 
@@ -47,7 +47,7 @@ SELECT
 FROM 
  Customer-Purchase-Analysis..orders o
 JOIN 
- products p ON o.product_id = p.product_id
+ Customer-Purchase-Analysis..products p ON o.product_id = p.product_id
 GROUP BY 
  p.product_name
 ORDER BY 
@@ -63,7 +63,7 @@ SELECT
 FROM 
   Customer-Purchase-Analysis..orders o
 JOIN 
-  products p ON o.product_id = p.product_id
+  Customer-Purchase-Analysis..products p ON o.product_id = p.product_id
 GROUP BY 
   STRFTIME('%Y-%m', o.order_date)
 ORDER BY 
