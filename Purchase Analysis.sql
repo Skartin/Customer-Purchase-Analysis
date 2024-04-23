@@ -7,7 +7,7 @@ SELECT
  gender,
  COUNT(*) AS total_customers
 FROM 
- customers
+ Customer-Purchase-Analysis..customers
 GROUP BY 
  gender;
 
@@ -16,7 +16,7 @@ SELECT
  location,
  COUNT(*) AS total_customers
 FROM 
- customers
+ Customer-Purchase-Analysis..customers
 GROUP BY 
  location
 ORDER BY 
@@ -28,7 +28,7 @@ LIMIT 5;
 SELECT 
  SUM(o.quantity * p.price) AS total_revenue
 FROM 
- orders o
+ Customer-Purchase-Analysis..orders o
 JOIN 
  products p ON o.product_id = p.product_id;
 
@@ -36,7 +36,7 @@ JOIN
 SELECT 
  AVG(o.quantity * p.price) AS avg_order_value
 FROM 
- orders o
+ Customer-Purchase-Analysis..orders o
 JOIN 
  products p ON o.product_id = p.product_id;
 
@@ -45,7 +45,7 @@ SELECT
  p.product_name,
  SUM(o.quantity) AS total_sales
 FROM 
- orders o
+ Customer-Purchase-Analysis..orders o
 JOIN 
  products p ON o.product_id = p.product_id
 GROUP BY 
@@ -61,7 +61,7 @@ SELECT
   STRFTIME('%Y-%m', o.order_date) AS month,
   SUM(o.quantity * p.price) AS total_sales
 FROM 
-  orders o
+  Customer-Purchase-Analysis..orders o
 JOIN 
   products p ON o.product_id = p.product_id
 GROUP BY 
