@@ -1,15 +1,15 @@
 
 
-
 -- 1. Explore customer demographics
 -- Distribution of customers by age and gender
 SELECT 
  gender,
  COUNT(*) AS total_customers
 FROM 
- Customer-Purchase-Analysiscustomers
+ customers
 GROUP BY 
  gender;
+
 
 -- Top locations with the highest number of customers
 SELECT 
