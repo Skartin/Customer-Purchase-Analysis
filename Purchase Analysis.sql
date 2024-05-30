@@ -1,71 +1,72 @@
-
-
 -- 1. Explore customer demographics
 -- Distribution of customers by age and gender
 SELECT 
- gender,
- COUNT(*) AS total_customers
+    gender,
+    COUNT(*) AS total_customers
 FROM 
- customers
+    customers
 GROUP BY 
- gender;
+    gender;
 
 
 -- Top locations with the highest number of customers
 SELECT 
- location,
- COUNT(*) AS total_customers
+    location,
+    COUNT(*) AS total_customers
 FROM 
- Customer-Purchase-Analysis..customers
+    [Customer-Purchase-Analysis]..customers
 GROUP BY 
- location
+    location
 ORDER BY 
- total_customers DESC
+    total_customers DESC
 LIMIT 5;
 
+--------------------------------------------------------
 -- 2. Analyze purchase behavior
 -- Total revenue generated from sales
 SELECT 
- SUM(o.quantity * p.price) AS total_revenue
+    SUM(o.quantity * p.price) AS total_revenue
 FROM 
- Customer-Purchase-Analysis..orders o
+    [Customer-Purchase-Analysis]..orders o
 JOIN 
- Customer-Purchase-Analysis..products p ON o.product_id = p.product_id;
+    [Customer-Purchase-Analysis]..products p ON o.product_id = p.product_id;
+
 
 -- Average order value
 SELECT 
- AVG(o.quantity * p.price) AS avg_order_value
+    AVG(o.quantity * p.price) AS avg_order_value
 FROM 
- Customer-Purchase-Analysis..orders o
+    [Customer-Purchase-Analysis]..orders o
 JOIN 
- Customer-Purchase-Analysis..products p ON o.product_id = p.product_id;
+    [Customer-Purchase-Analysis]..products p ON o.product_id = p.product_id;
+
 
 -- Most popular products based on sales volume
 SELECT 
- p.product_name,
- SUM(o.quantity) AS total_sales
+    p.product_name,
+    SUM(o.quantity) AS total_sales
 FROM 
- Customer-Purchase-Analysis..orders o
+    [Customer-Purchase-Analysis]..orders o
 JOIN 
- Customer-Purchase-Analysis..products p ON o.product_id = p.product_id
+    [Customer-Purchase-Analysis]..products p ON o.product_id = p.product_id
 GROUP BY 
- p.product_name
+    p.product_name
 ORDER BY 
- total_sales DESC
+    total_sales DESC
 LIMIT 5;
 
-
+----------------------------------------------------------
 -- 3. Examine sales trends
 -- Monthly sales trends
 SELECT 
-  STRFTIME('%Y-%m', o.order_date) AS month,
-  SUM(o.quantity * p.price) AS total_sales
+    STRFTIME('%Y-%m', o.order_date) AS month,
+    SUM(o.quantity * p.price) AS total_sales
 FROM 
-  Customer-Purchase-Analysis..orders o
+    [Customer-Purchase-Analysis]..orders o
 JOIN 
-  Customer-Purchase-Analysis..products p ON o.product_id = p.product_id
+    [Customer-Purchase-Analysis]..products p ON o.product_id = p.product_id
 GROUP BY 
-  STRFTIME('%Y-%m', o.order_date)
+    STRFTIME('%Y-%m', o.order_date)
 ORDER BY 
-  month;
+    month;
 
